@@ -1,0 +1,19 @@
+<div class="redirect-link">
+  <p>Forwarding you to:</p>
+
+  <TrackedLink @url={{@url}} @title={{@title}} />
+
+  {{#if this.waitThenRedirect.isRunning}}
+    <p>
+      in
+      {{this.time}}
+      seconds
+    </p>
+    <button
+      class="cancel-btn"
+      type="button"
+      {{on "click" this.cancelRedirect}}
+    >Cancel</button>
+  {{/if}}
+  <p>If the browser does not automatically redirect you, click the link above.</p>
+</div>

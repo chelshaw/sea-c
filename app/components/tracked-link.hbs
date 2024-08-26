@@ -1,0 +1,9 @@
+{{#if (and @title @url)}}
+  <a
+    class="link"
+    href={{@url}}
+    rel="noreferrer nofollow"
+    {{on "click" this.trackLink}}
+    ...attributes
+  >{{@title}}</a>
+{{/if}}

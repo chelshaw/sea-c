@@ -1,19 +1,27 @@
-/* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 
 html {
+  /* Colors */
   --orange-light: #ff8952;
   --orange-dark: #642d14;
 
   --foreground: #ffffff;
   --background: #232323;
   --background-dark: #131313;
-  --space: 8px;
   --link-color: var(--orange-light);
+
+  /* spacing */
+  --space: 8px;
+  --space-lg: 12px;
+  --round: 16px;
+  --max-width: 400px;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
+  font-family: "Noto Serif", serif;
+  font-weight: 300;
 }
 
 main {
@@ -24,19 +32,47 @@ a {
   color: var(--link-color);
 }
 
+/* STANDARD */
+.main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* LINKS */
 .links {
   margin: 0 auto;
-  max-width: 500px;
+  max-width: var(--max-width);
   padding: var(--space);
+  > a {
+    margin-bottom: var(--space-lg);
+  }
 }
 a.link {
   display: block;
   border: 1px solid var(--foreground);
-  padding: var(--space);
+  padding: var(--space) var(--space-lg);
   border-radius: 16px;
   text-align: center;
   color: var(--foreground);
   &:hover {
-    background-color: var(--orange-dark);
+    color: var(--orange-light);
+    border-color: var(--orange-light);
   }
+}
+
+.redirect-link {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  max-width: var(--max-width);
+  margin: var(--space) auto;
+  padding: var(--space);
+}
+
+.cancel-btn {
+  padding: var(--space);
+  border-radius: 16px;
+  background: var(--background-dark);
+  color: var(--foreground);
 }
