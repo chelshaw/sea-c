@@ -111,5 +111,8 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }
