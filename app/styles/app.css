@@ -1,1 +1,42 @@
 /* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
+
+html {
+  --orange-light: #ff8952;
+  --orange-dark: #642d14;
+
+  --foreground: #ffffff;
+  --background: #232323;
+  --background-dark: #131313;
+  --space: 8px;
+  --link-color: var(--orange-light);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+main {
+  padding: var(--space);
+}
+
+a {
+  color: var(--link-color);
+}
+
+.links {
+  margin: 0 auto;
+  max-width: 500px;
+  padding: var(--space);
+}
+a.link {
+  display: block;
+  border: 1px solid var(--foreground);
+  padding: var(--space);
+  border-radius: 16px;
+  text-align: center;
+  color: var(--foreground);
+  &:hover {
+    background-color: var(--orange-dark);
+  }
+}
