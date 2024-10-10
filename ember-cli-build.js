@@ -14,6 +14,15 @@ module.exports = function (defaults) {
         // NOTE: put any code coverage plugins last, after the transform.
       ],
     },
+
+    fingerprint: {
+      enabled: true,
+      extensions: ['css'],
+    },
+
+    // prember: {
+    //   urls: generateLinks,
+    // },
   });
 
   app.import('node_modules/normalize.css/normalize.css');
