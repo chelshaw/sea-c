@@ -20,7 +20,7 @@ module.exports = function (environment) {
     },
 
     fastboot: {
-      hostWhitelist: ['sea-c.me', /^localhost:\d+$/],
+      hostWhitelist: ['sea-c.me', 'sea-c.netlify.app', /^localhost:\d+$/],
     },
   };
 
