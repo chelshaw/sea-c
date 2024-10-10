@@ -8,6 +8,7 @@
     "paths": {
       "chase-whales/tests/*": ["tests/*"],
       "chase-whales/*": ["app/*"],
+      "fetch": ["node_modules/ember-fetch"],
       "*": ["types/*"]
     }
   }

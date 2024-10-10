@@ -114,6 +114,7 @@
     "edition": "octane"
   },
   "dependencies": {
+    "@types/ember-cli-fastboot": "^2.2.6",
     "normalize.css": "^8.0.1"
   }
 }

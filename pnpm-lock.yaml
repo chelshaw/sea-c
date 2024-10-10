@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@types/ember-cli-fastboot':
+        specifier: ^2.2.6
+        version: 2.2.6(@babel/core@7.25.2)
       normalize.css:
         specifier: ^8.0.1
         version: 8.0.1
@@ -1343,6 +1346,9 @@ packages:
 
   '@types/cors@2.8.17':
     resolution: {integrity: sha512-8CGDvrBj1zgo2qE+oS3pOCyYNqCPryMWY2bGfwA0dcfopWGgxs+78df0Rs3rc9THP4JkOhLsAa+15VdpAqkcUA==}
+
+  '@types/ember-cli-fastboot@2.2.6':
+    resolution: {integrity: sha512-zyXMLlIoC28rAlIof9e71RUxb/Ka5JTdlKqGd0QnNF2W3GgPRUQZzr1hK3CJLNJr9N2ecFEM4ew2qduxDynhGg==}
 
   '@types/ember-data@4.4.16':
     resolution: {integrity: sha512-plFqPkgw7n4YlkzvApkQAIhvvYTERlx8PeI2J5gSFtMtsKuoaIo8fXm4w22ZdBQtTzeh/kwvpO2WY8R/d5Ttfg==}
@@ -7884,6 +7890,13 @@ snapshots:
   '@types/cors@2.8.17':
     dependencies:
       '@types/node': 22.4.0
+
+  '@types/ember-cli-fastboot@2.2.6(@babel/core@7.25.2)':
+    dependencies:
+      '@types/ember__service': 4.0.9(@babel/core@7.25.2)
+    transitivePeerDependencies:
+      - '@babel/core'
+      - supports-color
 
   '@types/ember-data@4.4.16(@babel/core@7.25.2)':
     dependencies:

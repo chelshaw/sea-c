@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 
 html {
   /* Colors */
@@ -17,11 +18,29 @@ html {
   --max-width: 400px;
 }
 
+/* :root {
+  --body-color: white;
+  --font-color: black;
+  --h1-color: gold;
+}
+
+[data-dark-mode] {
+  --body-color: black;
+  --font-color: white;
+} 
+@media (prefers-color-scheme: dark) {
+  --body-color: black;
+  --font-color: white;
+}  
+*/
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Noto Serif", serif;
+  /* font-family: "Noto Serif", serif; */
+  font-family: "Noto Sans Mono", monospace;
   font-weight: 300;
+  padding: var(--space);
 }
 
 main {
@@ -48,7 +67,7 @@ a {
     margin-bottom: var(--space-lg);
   }
 }
-a.link {
+.link {
   display: block;
   border: 1px solid var(--foreground);
   padding: var(--space) var(--space-lg);
