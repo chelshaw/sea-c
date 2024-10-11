@@ -1,0 +1,50 @@
+<header class="main">
+  <h1>Zine</h1>
+  <hr />
+</header>
+<main>
+  <section class="links" id="resources">
+    <h2>Resources</h2>
+    {{#each this.model as |link|}}
+      <LinkTo
+        class="link"
+        @route="resource"
+        @model={{link.slug}}
+        ...attributes
+      >{{link.title}}</LinkTo>
+    {{/each}}
+  </section>
+  <section class="links" id="contents">
+    <hr />
+    <h2>Zine Contents</h2>
+    <p>❤️ for non-sighted readers ❤️</p>
+    <h3>Punching through: from anger to action</h3>
+    <p>We all deserve clean air, clean water, and a livable future.</p>
+    <p>But a handful of rich guys and the corporations they run are threatening
+      our ability to live, breathe, and thrive.</p>
+    <p>It's okay to be angry about it.</p>
+    <p>In fact, it's necessary.</p>
+    <p>"[Anger] helps us to identify when something is not quite right and needs
+      attention...[it] alerts us to the fact that something in the environment
+      around us needs addressing."</p>
+    <p>Read on:
+      <LinkTo @route="resource" @model="a01a">sea-c.me/r/a01a</LinkTo></p>
+    <p>This booth is for us to release anger, build community, and fight for our
+      future together.</p>
+    <p>Every month, we will spotlight climate injustice and collective actions.</p>
+    <p>It's our choice: adapt our economy to support people and planet, or
+      business as usual until we die.</p>
+    <h4>Next steps</h4>
+    <p>1. Find your climate superpower, then talk about it with your friends!
+      Take the quiz:
+      <LinkTo @route="resource" @model="a03q">sea-c.me/a03q</LinkTo></p>
+    <p>2. Check your voter registration. There are more than presidents on the
+      ballot. Find out more:
+      <LinkTo @route="resource" @model="a04v">sea-c.me/a04v</LinkTo></p>
+    <p>3. Come back together. Connect with other San Martians who care about
+      climate. See flyer for more info:
+      <LinkTo @route="resource" @model="a05t">sea-c.me/a05t</LinkTo></p>
+    <p>We honor and recognize that these lands we love are the unceded territory
+      of the Coahuitlan, Jumano, and Lakota peoples.</p>
+  </section>
+</main>
