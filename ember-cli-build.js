@@ -2,6 +2,20 @@
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
+// const generateLinks = ({ distDir }) => {
+//   return new Promise((resolve) => {
+//     let urls = ['/', '/links'];
+//     let redirectLinks = require(distDir + '/links.json');
+//     for (let l of redirectLinks) {
+//       urls.push(`/l/${l.slug}`);
+//     }
+
+//     resolve(urls);
+//   });
+// };
+
+const env = EmberApp.env();
+
 module.exports = function (defaults) {
   const app = new EmberApp(defaults, {
     'ember-cli-babel': { enableTypeScriptTransform: true },
@@ -16,7 +30,7 @@ module.exports = function (defaults) {
     },
 
     fingerprint: {
-      enabled: true,
+      enabled: env === 'production',
       extensions: ['css'],
     },
 

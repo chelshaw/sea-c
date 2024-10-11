@@ -51,7 +51,21 @@ a {
   color: var(--link-color);
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: bottom;
+}
+
 /* STANDARD */
+
+.application {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .main {
   max-width: var(--max-width);
   margin: 0 auto;

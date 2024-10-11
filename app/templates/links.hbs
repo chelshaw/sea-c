@@ -1,9 +1,0 @@
-<header class="main">
-  <h1>Links</h1>
-  <hr />
-</header>
-<main class="links">
-  {{#each-in this.model as |slug link|}}
-    <TrackedLink @url={{link.url}} @title={{link.title}} />
-  {{/each-in}}
-</main>
