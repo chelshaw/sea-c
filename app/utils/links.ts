@@ -10,28 +10,31 @@ export const resources: Record<string, Link> = {
   // zine 01
   a01a: {
     title: 'Characteristics of anger',
-    description: '',
+    description:
+      'This short article outlines the differences between anger and rage -- highlighting the usefulness of anger, and the danger of rage.',
     url: 'https://www.counselling-directory.org.uk/memberarticles/healing-anger-the-differences-between-anger-and-rage',
     slug: 'a01a',
     cta: 'Read the article',
   },
   a03q: {
     title: 'Find your climate superpower',
-    description: '',
-    url: 'https://www.notion.so/Choose-Your-Own-Adventure-Climate-action-1185268d281f80c883c1fa4621543663',
+    description:
+      'Professor, climate scientist, and thoughtful human Kim Nicholas (who runs the We Can Fix It substack) put together this excellent and interactive resource for anyone to discover their climate superpower.',
+    url: 'https://jpydatnf1hz.typeform.com/to/pUIM6hoy?typeform-source=wecanfixit.substack.com',
     slug: 'a03q',
     cta: 'Take the quiz',
   },
   a04v: {
     title: 'Check your voter registration',
-    description: '',
+    description:
+      "As recently as August 26, 2024 Govornor Abbott has removed over 1 million people from voter rolls. Make sure that didn't include you, and then check out ",
     url: 'https://www.vote411.org/',
     slug: 'a04v',
-    cta: '',
+    cta: 'Check your ballot and registration',
   },
   a05t: {
     title: 'Come back together',
-    description: '',
+    description: 'Wednesday Oct 16 from 6:30p - 7:30p at Tantra',
     slug: 'a05t',
     url: 'https://calendarlink.com/event/3Fy8K',
     cta: 'Add to your calendar',
