@@ -3,6 +3,10 @@
   <hr />
 </header>
 <main class="links">
-  <p>{{this.model.description}}</p>
+  {{#if this.model.partial}}
+    {{component (concat "resource-desc/" this.model.partial)}}
+  {{else}}
+    <p>{{this.model.description}}</p>
+  {{/if}}
   <TrackedLink @url={{this.model.url}} @title={{this.model.cta}} />
 </main>

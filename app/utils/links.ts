@@ -1,6 +1,7 @@
 export interface Link {
   title: string;
-  description: string;
+  description?: string;
+  partial?: string;
   slug: string;
   url?: string;
   cta?: string;
@@ -18,19 +19,17 @@ export const resources: Record<string, Link> = {
   },
   a03q: {
     title: 'Find your climate superpower',
-    description:
-      'Professor, climate scientist, and thoughtful human Kim Nicholas (who runs the We Can Fix It substack) put together this excellent and interactive resource for anyone to discover their climate superpower.',
+    partial: 'a03q',
     url: 'https://jpydatnf1hz.typeform.com/to/pUIM6hoy?typeform-source=wecanfixit.substack.com',
     slug: 'a03q',
     cta: 'Take the quiz',
   },
   a04v: {
-    title: 'Check your voter registration',
-    description:
-      "As recently as August 26, 2024 Govornor Abbott has removed over 1 million people from voter rolls. Make sure that didn't include you, and then check out ",
+    title: "Check what's on your ballot",
+    partial: 'a04v',
     url: 'https://www.vote411.org/',
     slug: 'a04v',
-    cta: 'Check your ballot and registration',
+    cta: "Get your voter's guide",
   },
   a05t: {
     title: 'Come back together',
